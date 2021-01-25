@@ -1,0 +1,30 @@
+<% layout('/layout/page') -%>
+  <div class="row">
+    <div class="col-12">  
+      <div class="card">
+        <h5 data-id="<%= prize.id %>" id="area-prize" class="card-header">Colegio: <%= prize.school %></h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><%= n %> Participantes</li>
+          <li class="list-group-item"><%= ncarriers %> Carreras</li>
+          <li id="area-submit" class="list-group-item text-right">
+            <button id="btn-set-winner" class="btn btn-primary">
+              Sortear
+            </button>
+          </li>
+        </ul>
+        <div class="card-body text-center">
+          <div id="area-loading" style="display: none">
+            <img src="https://rayrojas-cache.s3-us-west-2.amazonaws.com/prize/static/ajax-loader.gif" />
+          </div>
+          <h3 class="text-center" id="area-winner" style="display: none">
+          </h3>
+          <h6 class="text-center" id="area-phone" style="display: none; font-size: 12px;">
+          </h6>
+          <div class="alert alert-danger" id="area-error"  style="display: none">
+            Oops! Algo ha salido mal. Por favor refresca tu navegador e intentalo de nuevo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

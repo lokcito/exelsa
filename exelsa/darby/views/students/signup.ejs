@@ -1,0 +1,70 @@
+<% layout('/layout/page') -%>
+<main class="main">
+  <div class="row justify-content-center ">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mt-3">
+            <div class="card-body">
+              <div class="mx-auto" >
+                <div>
+                  <img style="width: 100%" src="<%= current_subject.image %>" />
+                  <div style="position: relative; top: -100px; left: 20px">
+                    <span style="background: rgba(0, 0, 0, .85); color: #fff; padding: 10px; font-size: 2em" 
+                      class="display-5"><%= current_subject.name %>: </span>
+                    <span style="background: rgba(0, 0, 0, .85); color: #fff; padding: 5px" 
+                      class="lead"><%= current_subject.description %></span>
+                  </div>
+                </div>
+              </div>        
+            </div>
+          </div>
+          <div class="card mt-4">
+            <h3 class="text-center card-header">Formulario de Pre Matricula</h3>
+            <div class="card-body">
+              <form method="POST" action="/students/sign_up">
+                <input type="hidden" value="<%= current_subject.id %>" name="subjectId">
+                <div class="form-group">
+                  <label>Nombres:</label>
+                  <input required class="form-control" 
+                    type="text" name="firstName"  maxlength="250" >
+                </div>
+                <div class="form-group">
+                  <label>Apellidos:</label>
+                  <input required class="form-control" 
+                    type="text" name="lastName"  maxlength="250" >
+                </div>
+                <div class="form-group">
+                  <label>Teléfono móvil:</label>
+                  <input required class="form-control" 
+                    type="text" name="phone" maxlength="9" minlength="9" >
+                </div>
+                <div class="form-group">
+                  <label>Correo electrónico:</label>
+                  <input required class="form-control" 
+                    type="email" name="email" 
+                    maxlength="250" minlength="3" >
+                </div>
+                <div class="form-group">
+                  <label>Grado:</label>
+                  <select required name="level" class="form-control">
+                    <option value="5">Quinto</option>
+                    <option value="4">Cuarto</option>
+                    <option value="3">Tercero</option>
+                    <option value="2">Segundo</option>
+                    <option value="1">Primero</option>
+                  </select>
+                </div>
+                <div class="form-group text-right">
+                  <button class="btn btn-primary" type="submit">
+                    Pre - Matricularme
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

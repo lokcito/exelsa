@@ -1,0 +1,168 @@
+
+.navbar.navbar-light.bg-light {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-left: 2em;
+}
+@media (min-width: 768px) {
+  .ps-md-3 {
+      padding-left: 1rem!important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-flex {
+      display: flex!important;
+  }
+}
+.w-100 {
+    width: 100%!important;
+}
+
+@media (min-width: 768px){
+.flex-md-equal > * {
+    flex: 1;
+}}
+@media (min-width: 768px){
+.pt-md-5 {
+    padding-top: 3rem!important;
+}}
+@media (min-width: 768px){
+.px-md-5 {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+}}
+
+  
+footer {
+ border-left: 5em solid #ffcb00; 
+}
+.navbar {
+    background-color: #00469b;
+}
+.nav-link.whatsapp {
+  background: #25D366;
+  color: #fff;
+  margin-left: 1em;
+  border-radius: 5px;
+}
+.banner {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/mosaic.png');
+}
+.banner h1 {color: #ffcb00;font-size: 4em; font-family: 'Bangers', cursive;}
+.banner h2 {color: #fff;font-size: 2em; text-shadow:4px 4px 8px #0150a4; margin-top: 20px; font-family: 'Bangers', cursive;}
+.banner h3 {color: #fff;}
+.banner ul li {color: #fff;}
+.banner .btn {
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: arial;
+	border: 0px;
+	padding: 10px 15px;
+	text-decoration:none;
+}
+.banner .btn.red {
+	background:linear-gradient(to bottom, #dc191e 5%, #7b0f10 100%);
+	background-color:#039949;    
+}
+.banner .btn.blue {
+	background:linear-gradient(to bottom, #04a1e4 5%, #233c99 100%);
+	background-color:#039949;    
+}
+.banner .btn.red:hover {
+	background:linear-gradient(to bottom, #7b0f10 5%, #dc191e 100%);
+	background-color:#039949;    
+}
+.banner .btn.blue:hover {
+	background:linear-gradient(to bottom, #233c99 5%, #04a1e4 100%);
+	background-color:#039949;    
+}
+.banner .btn.green {
+	background:linear-gradient(to bottom, #039949 5%, #04542c 100%);
+	background-color:#039949;    
+}
+.banner .btn.green:hover {
+    background:linear-gradient(to bottom, #04542c 5%, #039949 100%);
+    background-color:#04542c;
+}
+main.main {
+    padding-bottom: 5em;
+}
+footer {
+    position: fixed;
+    bottom: -100px;
+}
+footer .content-area {
+    margin-top: -30px;
+}
+.card.card-6 {
+    background: #49501d;
+}
+.card.card-6 h2 {
+    color: #f0c807;
+}
+.card.card-6 p {
+    color: #fff;
+}
+.card.card-6 div.mx-auto {
+    height: auto!important;
+}
+.card.card-6 .btn {
+    background: #f5bb19;
+    color: #000;
+    font-weight: bold;
+    border: 0px;
+}
+.card.card-6 .btn:active, 
+.card.card-6 .btn:focus {
+    background: #f0c807;
+    color: #000;
+    font-weight: bold;
+    border: 0px;
+}
+
+.excel-wrapper table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.excel-wrapper table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.excel-wrapper table th,
+.excel-wrapper table td {
+    padding: 12px 15px;
+}
+.excel-wrapper table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.excel-wrapper table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.excel-wrapper table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.excel-wrapper table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+#drop{
+  border:2px dashed #bbb;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  padding:25px;
+  text-align:center;
+  font:20pt bold,"Vollkorn";color:#bbb
+}

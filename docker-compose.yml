@@ -1,0 +1,32 @@
+version: '2'
+services:
+  cloud9:
+    image: linuxserver/cloud9
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+      - USERNAME=none
+      - PASSWORD=sasa
+    volumes:
+      - .:/code
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8719:8000
+    depends_on:
+      - express
+  express: 
+    working_dir: "/sandbox/exelsa/darby"
+    build: .
+    volumes: 
+      - ".:/sandbox"
+    ports: 
+      - "3012:3000"
+    stdin_open: true
+    user: 1000:1000
+    tty: true
+    environment:
+      - PRODUCTION_DEFAULT_FROM_EMAIL=aaa
+      - PRODUCTION_SERVER_EMAIL=xxx
+      - PRODUCTION_MAILRELAY_URL=xx
+      - PRODUCTION_MAILRELAY_TOKEN=xxx
